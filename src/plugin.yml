@@ -1,0 +1,9 @@
+name: IverBan
+author: Iverins
+main: me.iverins.YYS
+version: 1.0
+commands:
+  iban:
+    description: Ban Commands
+    usage: /iban help
+    aliases: [ib]
