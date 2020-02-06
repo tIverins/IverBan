@@ -1,5 +1,7 @@
 package me.iverins;
 
+import me.iverins.commands.Iverban;
+import me.iverins.playerEvent.playerJoin;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -34,6 +36,8 @@ public class YYS extends JavaPlugin{
     @Override
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage("§a迫害yys中，被yys同化，成为yys的粉丝.");
+        Bukkit.getPluginCommand("iban").setExecutor(new Iverban());
+        Bukkit.getPluginManager().registerEvents(new playerJoin(),this);
     }
     @Override
     public void onDisable() {
