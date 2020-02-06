@@ -1,1 +1,5 @@
-Iverins Plugins是一个摸鱼插件
+# IverBan是由Iverins开发的封禁插件
+----
+* 目前支持功能：
+支持权限判断封禁
+父子权限封禁
